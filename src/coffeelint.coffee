@@ -24,6 +24,7 @@ else
     # which breaks NodeJS
     # https://github.com/substack/node-browserify/issues/471
     CoffeeScript = nodeRequire 'coffee-script'
+    CoffeeReactTransform = nodeRequire 'coffee-react-transform'
 
 # Browserify will inline the file at compile time.
 packageJSON = require('./../package.json')
@@ -166,6 +167,7 @@ hasSyntaxError = (source) ->
     try
         # If there are syntax errors this will abort the lexical and line
         # linters.
+        source = CoffeeReactTransform(source)
         CoffeeScript.tokens(source)
         return false
     return true
@@ -224,7 +226,8 @@ coffeelint.lint = (source, userConfig = {}, literate = false) ->
                         config[r] = { level: 'error' }
 
     # Do AST linting first so all compile errors are caught.
-    astErrors = new ASTLinter(source, config, _rules, CoffeeScript).lint()
+    astErrors = new ASTLinter(source, config, _rules, CoffeeScript,
+                              CoffeeReactTransform).lint()
     errors = [].concat(astErrors)
 
     # only do further checks if the syntax is okay, otherwise they just fail
