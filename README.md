@@ -4,6 +4,10 @@ CoffeeLint
 CoffeeLint is a style checker that helps keep CoffeeScript code
 clean and consistent.
 
+This fork adds support for React and cjsx syntax.
+
+We may merge these changes back into the original [clutchski/coffeelint](http://github.com/clutchski/coffeelint/issues/) project when a suitable solution has been found.
+
 For guides on installing, using and configuring CoffeeLint, head over
 [here](http://www.coffeelint.org).
 
@@ -14,10 +18,11 @@ To suggest a feature, report a bug, or general discussion, head over
 
 Current:
 
-- [Asa Ayers](https://github.com/AsaAyers)
+- [Evan Morikawa](https://github.com/emorikawa)
 
 Past:
 
+- [Asa Ayers](https://github.com/AsaAyers)
 - [Matt Perpick](https://github.com/clutchski)
 
 ## Contributing
