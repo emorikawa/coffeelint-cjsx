@@ -1,7 +1,7 @@
 {
   "name": "coffeelint-cjsx",
   "description": "Lint your CoffeeScript & CJSX",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "homepage": "http://www.coffeelint.org",
   "keywords": [
     "lint",
@@ -9,7 +9,9 @@
     "coffee-script"
   ],
   "author": "Evan Morikawa <evan@evanmorikawa.com>",
-  "contributors": ["Matthew Perpick <clutchski@gmail.com>"],
+  "contributors": [
+    "Matthew Perpick <clutchski@gmail.com>"
+  ],
   "main": "./lib/coffeelint.js",
   "engines": {
     "npm": ">=1.3.7",
@@ -48,7 +50,6 @@
     "posttest": "npm run lint",
     "prepublish": "cake prepublish",
     "publish": "cake publish",
-    "install": "cake install",
     "lint": "cake compile && ./bin/coffeelint .",
     "lint-csv": "cake compile && ./bin/coffeelint --csv .",
     "lint-jslint": "cake compile && ./bin/coffeelint --jslint .",
