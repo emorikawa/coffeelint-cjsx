@@ -162,6 +162,7 @@ coffeelint.registerRule(
 )
 coffeelint.registerRule require './rules/no_empty_functions.coffee'
 coffeelint.registerRule require './rules/prefer_english_operator.coffee'
+coffeelint.registerRule require './rules/spacing_after_comma.coffee'
 
 hasSyntaxError = (source) ->
     try
