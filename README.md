@@ -4,7 +4,13 @@ CoffeeLint
 CoffeeLint is a style checker that helps keep CoffeeScript code
 clean and consistent.
 
-This fork adds support for React and cjsx syntax.
+This fork adds support for React and CJSX syntax.
+
+v2.0.0 of coffeelint-cjsx uses coffee-react-transform 2.x, which is
+suitable for [React 0.12](http://facebook.github.io/react/blog/2014/10/28/react-v0.12.html). It also updates browserify dependencies.
+
+v1.7.0 of coffeelint-cjsx uses coffee-react-transform 1.x, which is suitable
+for React 0.11
 
 We may merge these changes back into the original [clutchski/coffeelint](http://github.com/clutchski/coffeelint/issues/) project when a suitable solution has been found.
 
