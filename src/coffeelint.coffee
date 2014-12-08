@@ -133,7 +133,9 @@ coffeelint.registerRule require './rules/arrow_spacing.coffee'
 coffeelint.registerRule require './rules/no_tabs.coffee'
 coffeelint.registerRule require './rules/no_trailing_whitespace.coffee'
 coffeelint.registerRule require './rules/max_line_length.coffee'
-coffeelint.registerRule require './rules/line_endings.coffee'
+# Note that line_endings can't be used with coffeelint-cjsx right now
+# because the CJSX compiler strips out all windows line endings.
+# coffeelint.registerRule require './rules/line_endings.coffee'
 coffeelint.registerRule require './rules/no_trailing_semicolons.coffee'
 coffeelint.registerRule require './rules/indentation.coffee'
 coffeelint.registerRule require './rules/camel_case_classes.coffee'
