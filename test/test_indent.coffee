@@ -421,4 +421,18 @@ vows.describe('indent').addBatch({
             errors = coffeelint.lint(source)
             assert.isEmpty(errors)
 
+    'Handles cjsx nesting' :
+        topic : """
+            render = ->
+              <MyComponent className="foo"
+                           myFirstProp="bar"
+                           mySecondProp={"computed baz"}>
+                <div>Child 1</div>
+                <p>Child 2</p>
+              </MyComponent>
+            """
+        'is permitted': (source) ->
+            errors = coffeelint.lint(source)
+            assert.isEmpty(errors)
+
 }).export(module)
