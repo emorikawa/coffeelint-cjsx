@@ -22,11 +22,11 @@
     "url": "git://github.com/emorikawa/coffeelint-cjsx.git"
   },
   "bin": {
-    "coffeelint": "./bin/coffeelint"
+    "coffeelint-cjsx": "./bin/coffeelint-cjsx"
   },
   "dependencies": {
-    "coffee-react-transform": "^2.1",
-    "coffee-script": "~1.7",
+    "coffee-react-transform": "^3.2",
+    "coffee-script": "^1.9",
     "glob": "^4.0.0",
     "ignore": "^2.2.15",
     "optimist": "^0.6.1",
@@ -50,9 +50,9 @@
     "posttest": "npm run lint",
     "prepublish": "cake prepublish",
     "publish": "cake publish",
-    "lint": "cake compile && ./bin/coffeelint .",
-    "lint-csv": "cake compile && ./bin/coffeelint --csv .",
-    "lint-jslint": "cake compile && ./bin/coffeelint --jslint .",
+    "lint": "cake compile && ./bin/coffeelint-cjsx .",
+    "lint-csv": "cake compile && ./bin/coffeelint-cjsx --csv .",
+    "lint-jslint": "cake compile && ./bin/coffeelint-cjsx --jslint .",
     "compile": "cake compile"
   }
 }
