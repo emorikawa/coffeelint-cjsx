@@ -22,7 +22,7 @@
     "url": "git://github.com/emorikawa/coffeelint-cjsx.git"
   },
   "bin": {
-    "coffeelint": "./bin/coffeelint-cjsx"
+    "coffeelint-cjsx": "./bin/coffeelint-cjsx"
   },
   "dependencies": {
     "coffee-react-transform": "^2.1",
