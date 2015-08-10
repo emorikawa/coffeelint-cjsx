@@ -25,7 +25,7 @@
     "coffeelint-cjsx": "./bin/coffeelint-cjsx"
   },
   "dependencies": {
-    "coffee-react-transform": "^2.1",
+    "coffee-react-transform": "^3.2",
     "coffee-script": "^1.9",
     "glob": "^4.0.0",
     "ignore": "^2.2.15",
